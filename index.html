@@ -1,39 +1,21 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<!--this is the main page of the game-->
-<!-- the js sript will call the api to pull data from the database-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Text Twist</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- css and boostrap crap. idk if i really need this bootstrap stuff-->
-        <link rel="stylesheet" href="style.css">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
-integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    </head>
-    <body id="texttwistbod" bgcolor="salmon">
-       <h1 align="center">TEXT TWIST by Art Tenorio</h1>
-        <form id="texttwistform">
-            <div cass="form-group" align="center">
-                <h1 id="thepossiblewords">print the lengths of the other words...</h1>
+<html>
+  <head>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1 align="center">TEXT TWIST by Art Tenorio</h1>
 
-            </div>
-            <div align="center">
-               <h1 id="randomletters">this is where the random letters appear...</h1> 
-            </div>
-
-            <div class='form-group' align="center"> 
-                <label for='theanswer'>Input word Guess:</label>
-                <input id='theanswer' type='text' class='form-control' required>
-                <input type='submit' id='go' class='btn btn-danger' value='Submit'>
-            </div>
-
-        </form>
-        <script src="script.js" async defer></script>
-    </body>
+    <button id="grabmore">Fetch 10 Bingos</button>
+    <ul id="bingos">
+    </ul>
+  </body>
+  <script src="script.js">
+  
+  </script>
 </html>
