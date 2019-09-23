@@ -10,11 +10,12 @@ $(document).ready(function(){
         $(evt.currentTarget).find(".answer").toggleClass("hidden");
       });
     }
-
+    //user submits their answer and checks against the possible words...
     $("#go").on("click", function(){
         alert("DUH");
       });
-    
+      
+    //get the twist!
     $("#grabmore").on("click", function(){
       $.ajax({
           method: "GET",
