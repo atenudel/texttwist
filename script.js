@@ -17,8 +17,14 @@ $(document).ready(function(){
        //this checks to see if the user input is a possible word
      // if so, give them a point, if not do nothing but let them know its wrong
      let check = function(submission){
-         alert(document.getElementById("therackwords").innerHTML);
-        alert(shit);
+         words = document.getElementById("therackwords").innerHTML.split(",");
+         
+         for(var i = 0; i < words.length; i++) {
+             if(words[i] == submission) {
+                 alert("match!");
+             }
+         }
+        
     }
     
     
