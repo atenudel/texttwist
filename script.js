@@ -18,15 +18,20 @@ $(document).ready(function(){
      // if so, give them a point, if not do nothing but let them know its wrong
      let check = function(submission){
          words = document.getElementById("therackwords").innerHTML.split(",");
-         
+         var counter = 0;
          for(var i = 0; i < words.length; i++) {
              if(words[i] == submission) {
-                 alert("match!");
-             }
+                counter++;
+            }
          }
-        
+          if(counter !== 0) {
+            alert("match was found!");
+            return true;
+        } else {
+            alert("no match was found!");
+            return false;
+        }
     }
-    
     
     //user submits their answer and checks against the possible words...
     $("#go").on("click", function(){
