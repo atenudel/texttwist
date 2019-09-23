@@ -6,17 +6,26 @@
         display: none;
       }
     </style>
+       <link rel="stylesheet" href="style.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
   </head>
   <body>
-    <h1 align="center">TEXT TWIST by Art Tenorio</h1>
+    <h1 align="center">CRAPPY TEXT TWIST</h1>
 
-    <button id="grabmore">Fetch 10 Bingos</button>
+   
+    <div class='form-group' align="center"> 
+            <label for='theanswer'>Input Word Guess:</label>
+            <input id='theanswer' type='text' class='form-control' required>
+            <input type='submit' id='go' class='btn btn-danger' value='Submit'>
+        
+        <button id="grabmore">Get a Twist</button>
     <ul id="bingos">
     </ul>
-     <script src="script.js">
-  
+    </div>
+  <script src="script.js">
   </script>
   </body>
- 
+  
 </html>
