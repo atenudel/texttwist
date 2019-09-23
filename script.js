@@ -12,7 +12,9 @@ $(document).ready(function(){
     }
     //user submits their answer and checks against the possible words...
     $("#go").on("click", function(){
-        alert("DUH");
+        var submission = document.getElementById("theanswer").value;
+        // if user is correct let them know... else...
+        alert(submission);
       });
       
     //get the twist!
