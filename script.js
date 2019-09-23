@@ -1,5 +1,5 @@
 $(document).ready(function(){
-      
+      var pts = 0;
 
     let showRacks = function(racks){
 
@@ -32,6 +32,21 @@ $(document).ready(function(){
             return false;
         }
     }
+    // this only gets called if the player is correct anyway...
+    // wait its not working yet...
+    let scoreboard = function() {
+         var score = document.getElementById("thescoreboard");
+    var number = score.innerHTML;
+    pts++;
+    score.innerHTML = pts;
+    if(pts > 5) {
+        alert("YOU WON THE GAME!");
+            location.reload();
+
+    }
+
+    }
+    
     
     //user submits their answer and checks against the possible words...
     $("#go").on("click", function(){
@@ -39,14 +54,12 @@ $(document).ready(function(){
         //alert(submission);
         if(check(submission)) {
             alert("You Are Correct!");
-
+            scoreboard();
         } else {
             alert("Wrong Answer, Try Again!");
         }
       });
      
-  
-      
     //get the twist!
     $("#grabmore").on("click", function(){
       $.ajax({
